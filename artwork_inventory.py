@@ -1,10 +1,6 @@
-import argparse
-import sqlite3
-import sys
-import os
+import argparse, os, sqlite3
 from typing import Optional
 
-#!/usr/bin/env python3
 """
 Simple CLI tool to manage an artwork product inventory using SQLite.
 
