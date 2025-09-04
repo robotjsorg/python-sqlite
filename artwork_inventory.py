@@ -17,9 +17,9 @@ Commands:
     get                 Show one product by id or sku.
 
 Example:
-    python test-sql.py add --title "Sunset" --artist "A. Painter" --year 2020 --price 150.0 --quantity 3 --sku SUN-001
-    python test-sql.py update-qty --sku SUN-001 --delta -1
-    python test-sql.py list
+    python artwork_inventory.py add --title "Sunset" --artist "A. Painter" --year 2020 --price 150.0 --quantity 3 --sku SUN-001
+    python artwork_inventory.py update-qty --sku SUN-001 --delta -1
+    python artwork_inventory.py list
 """
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "artwork_inventory.db")
