@@ -8,4 +8,4 @@
 * List the current directory's contents by typing and entering `ls` or `ls -la`
 * Navigate to the repo by typing and entering `cd path/to/folder/python-sqlite`
 * Install Python by typing and entering `sudo apt install python3`
-* Run the Python script by typing `python3 python-sqlite.py`
+* Run the Python script by typing `python3 artwork_inventory.py`
