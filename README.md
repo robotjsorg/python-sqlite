@@ -1,5 +1,5 @@
 * [Setup or validate Github account](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github#signing-up-for-a-new-personal-account)
-* Add Ari to [Joe's "python-sqlite" Github repo](https://github.com/robotjsorg/python-sqlite)
+* Get added to ["python-sqlite" Github repo](https://github.com/robotjsorg/python-sqlite)
 * [Download Visual Studio Code](https://code.visualstudio.com/)
 * Install these "VSCode" extensions: [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python), [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl), [Github Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot), [Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 * Clone the Github repo by opening WSL in the bottom pane of VSCode and then typing and entering `git clone git@github.com:robotjsorg/python-sqlite.git`
