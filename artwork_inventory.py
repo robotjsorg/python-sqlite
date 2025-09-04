@@ -156,13 +156,6 @@ def main(argv=None):
         p_get = sub.add_parser("get", help="Get one product")
         sub_parsers['get'] = p_get
 
-        # provide a `help` subcommand to show help for specific commands: `help` or `help add`
-        p_help = sub.add_parser("help", help="Show help for a command")
-        p_help.add_argument("command", nargs="?", help="Command to show help for")
-        sub_parsers['help'] = p_help
-        p_get.add_argument("--id", type=int)
-        p_get.add_argument("--sku")
-
         args = parser.parse_args(argv)
 
         conn = get_conn()
@@ -171,17 +164,7 @@ def main(argv=None):
         if args.cmd == "init":
                 print("Database initialized.")
         elif args.cmd == "help":
-                # `python test-sql.py help` -> show top-level help
-                # `python test-sql.py help add` -> show help for the `add` subcommand
-                cmd = getattr(args, 'command', None)
-                if not cmd:
-                        parser.print_help()
-                else:
-                        p = sub_parsers.get(cmd)
-                        if p:
-                                p.print_help()
-                        else:
-                                print(f"Unknown command: {cmd}")
+                parser.print_help()
         elif args.cmd == "add":
                 add_product(conn, args.title, args.artist, args.year, args.price, args.quantity, args.sku)
         elif args.cmd == "remove":
